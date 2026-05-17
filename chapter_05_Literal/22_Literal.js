@@ -12,4 +12,5 @@ console.log( typeof isStudent ); //boolean
 console.log( typeof pi ); //number
 console.log( typeof name ); //string
 console.log( typeof nullValue ); //object 
+console.log( typeof undefinedValue ); //undefined
 // (this is a known quirk in JavaScript)

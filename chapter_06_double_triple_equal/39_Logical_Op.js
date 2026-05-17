@@ -1,0 +1,8 @@
+let a = true;
+let b = false;
+console.log( a && b );//false
+console.log( a || b );//true
+console.log( !a );//false
+console.log( !b );//true
+
+console.log( 5 != "g" ); //5 is not equal to "g" 
