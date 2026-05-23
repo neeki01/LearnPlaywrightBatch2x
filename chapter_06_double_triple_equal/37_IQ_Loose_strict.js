@@ -7,4 +7,4 @@ console( "" == "0" ); // false — strict equality (===)
 console.log( 0 == false );// true — loose equality (==)
 console.log( null == 0 ); // false — loose equality (==)
 console.log( null == undefined ); // true — loose equality (==) considers null and undefined equal
-console.log( null === undefined ); // false — strict equality (===) considers them different types
+console.log( null === undefined ); // false — strict equality (===) considers them different typespl
