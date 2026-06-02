@@ -1,4 +1,4 @@
-let day = 2;
+let day = 10;
 
 //1-Mon,2 -Tuesday
 

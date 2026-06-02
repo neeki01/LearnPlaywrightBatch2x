@@ -54,7 +54,7 @@ let rem = number1 % 4;
 let remi = number1 % 100;
 let remind = number1 % 400;
 
-if ( rem === 0 && !( remi === 0 ) || remind === 0 ) {
+if ( rem === 0 && remi !== 0 || remind === 0 ) {
     console.log( "Year is leap year" );
 }
 else {

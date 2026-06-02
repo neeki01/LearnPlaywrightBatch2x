@@ -10,6 +10,7 @@ A comprehensive learning repository for SDET automation concepts using Playwrigh
 - [Chapter 4: JavaScript Concepts](#chapter-4-javascript-concepts)
 - [Chapter 7: If Else](#chapter-7-if-else)
 - [Chapter 8: Switch Statement](#chapter-8-switch-statement)
+- [Chapter 9: User Input](#chapter-9-user-input)
 - [Chapter 11: Arrays](#chapter-11-arrays)
 - [Getting Started](#getting-started)
 - [Resources](#resources)
@@ -83,6 +84,24 @@ Switch statement syntax and usage in JavaScript.
 | File | Description |
 |------|-------------|
 | `58_Switch.js` | Switch statement basics and examples |
+| `59_No_Break.js` | Switch without break (fall-through behavior) |
+| `60_Default.js` | Using the default case in switch |
+| `61_Real_TIme_Example.js` | Real-time switch statement examples |
+| `62_Switch_Grooup.js` | Grouping switch cases |
+| `63_IQ.js` | Interview questions on switch |
+| `64_IQ2.js` | Interview questions part 2 |
+| `65_IQ3.js` | Interview questions part 3 |
+| `66_IQ4.js` | Interview questions part 4 |
+
+## Chapter 9: User Input
+
+Handling user input in Node.js using various methods.
+
+| File | Description |
+|------|-------------|
+| `67_User_Input.js` | Basics of user input in Node.js |
+| `68_Node_ReadLine.js` | Using Node.js readline module |
+| `69_Prompt_sync.js` | Synchronous prompt for user input |
 
 ## Chapter 11: Arrays
 
