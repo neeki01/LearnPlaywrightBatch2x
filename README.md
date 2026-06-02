@@ -8,6 +8,9 @@ A comprehensive learning repository for SDET automation concepts using Playwrigh
 - [Chapter 2: JavaScript Concepts](#chapter-2-javascript-concepts)
 - [Chapter 3: Identifier & Literals](#chapter-3-identifier--literals)
 - [Chapter 4: JavaScript Concepts](#chapter-4-javascript-concepts)
+- [Chapter 7: If Else](#chapter-7-if-else)
+- [Chapter 8: Switch Statement](#chapter-8-switch-statement)
+- [Chapter 11: Arrays](#chapter-11-arrays)
 - [Getting Started](#getting-started)
 - [Resources](#resources)
 
@@ -55,6 +58,45 @@ Advanced JavaScript concepts including variable declarations, scope, and hoistin
 | `15_let_scope.js` | Block scope with let |
 | `16_Hoisting.js` | Variable hoisting behavior |
 | `17_Hoisting_fn.js` | Function hoisting behavior |
+
+## Chapter 7: If Else
+
+Conditional statements in JavaScript using if, else, and else if.
+
+| File | Description |
+|------|-------------|
+| `48_If_Else.js` | Basic if-else statements |
+| `49_IfElseIf_Else.js` | If-else if-else chains |
+| `50_Real_Examples_If_Else.js` | Real-world if-else examples |
+| `51_API_If_Else.js` | API-related if-else scenarios |
+| `52_IQ_If_Else.js` | Interview questions on if-else |
+| `53_IF_ELSE_Real.js` | Practical if-else implementations |
+| `54_IQ.js` | Interview questions |
+| `55_IE.js` | If-else exercises |
+| `56_Problems.js` | Problem set 1 |
+| `57_Problems.js` | Problem set 2 |
+
+## Chapter 8: Switch Statement
+
+Switch statement syntax and usage in JavaScript.
+
+| File | Description |
+|------|-------------|
+| `58_Switch.js` | Switch statement basics and examples |
+
+## Chapter 11: Arrays
+
+JavaScript arrays: creation, manipulation, and common operations.
+
+| File | Description |
+|------|-------------|
+| `83_Arrays.js` | Introduction to arrays |
+| `84_Arrays.js` | Array fundamentals |
+| `85_Access_Array.js` | Accessing array elements |
+| `86_Arrrays_Adding_Remove.js` | Adding and removing array elements |
+| `87_Adding_Remove.js` | Array add/remove operations |
+| `88_REAL_Examples.js` | Real-world array examples |
+| `89_Searching.js` | Array searching techniques |
 
 ## Getting Started
 
