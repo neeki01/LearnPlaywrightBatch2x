@@ -11,6 +11,7 @@ A comprehensive learning repository for SDET automation concepts using Playwrigh
 - [Chapter 7: If Else](#chapter-7-if-else)
 - [Chapter 8: Switch Statement](#chapter-8-switch-statement)
 - [Chapter 9: User Input](#chapter-9-user-input)
+- [Chapter 10: Loops](#chapter-10-loops)
 - [Chapter 11: Arrays](#chapter-11-arrays)
 - [Getting Started](#getting-started)
 - [Resources](#resources)
@@ -102,6 +103,25 @@ Handling user input in Node.js using various methods.
 | `67_User_Input.js` | Basics of user input in Node.js |
 | `68_Node_ReadLine.js` | Using Node.js readline module |
 | `69_Prompt_sync.js` | Synchronous prompt for user input |
+
+## Chapter 10: Loops
+
+Repeating blocks of code using for, while, and do-while loops.
+
+| File | Description |
+|------|-------------|
+| `71_For_loop.js` | Introduction to for loops |
+| `72_For_loop.js` | For loop basics |
+| `73_For_Loop2.js` | For loop variations and examples |
+| `74_IQ.js` | Interview questions on loops |
+| `75_For_OF_IN_EACH.js` | For...of, for...in, and forEach loops |
+| `76_While.js` | While loop syntax and examples |
+| `77_Do_While.js` | Do-while loop basics |
+| `78_Do_While.js` | Do-while loop examples |
+| `79_IQ.js` | Interview questions part 1 |
+| `80_IQ.js` | Interview questions part 2 |
+| `81_IQ.js` | Interview questions part 3 |
+| `82_IQ.js` | Interview questions part 4 |
 
 ## Chapter 11: Arrays
 
