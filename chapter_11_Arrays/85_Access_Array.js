@@ -1,14 +1,13 @@
-let status = [ "pass", "fail", "skip" ];
-console.log( status[ 0 ] );
-console.log( status[ 2 ] );
+// Accessing & Modifying
+let statuses = ["pass", "fail", "skip"];
+console.log(statuses[0]);
+console.log(statuses[2]);
 
+console.log(statuses.at(-1));
+console.log(statuses.at(-2));
+console.log(statuses.at(-3));
+// console.log(statuses.at(-4)); undefined
 
-console.log( status.at( -1 ) );//  borrowed from Python
-console.log( status.at( -2 ) );
-console.log( status.at( -3 ) );
-
-
-status[ 1 ] = "blocked";
-console.log( status );
-
-console.log( status[ -1 ] );//undefined  can not do without 'at'
+// Modify
+statuses[1] = "blocked";
+console.log(statuses);

@@ -132,10 +132,19 @@ JavaScript arrays: creation, manipulation, and common operations.
 | `83_Arrays.js` | Introduction to arrays |
 | `84_Arrays.js` | Array fundamentals |
 | `85_Access_Array.js` | Accessing array elements |
-| `86_Arrrays_Adding_Remove.js` | Adding and removing array elements |
+| `86_Arrays_Adding_Remove.js` | Adding and removing array elements |
+| `86_Arrrays_Adding_Remove.js` | Adding and removing array elements (original) |
 | `87_Adding_Remove.js` | Array add/remove operations |
-| `88_REAL_Examples.js` | Real-world array examples |
+| `87_Adding_Remove2.js` | Array add/remove operations part 2 |
+| `88_REAL_Example.js` | Real-world array examples |
+| `88_REAL_Examples.js` | Real-world array examples (original) |
 | `89_Searching.js` | Array searching techniques |
+| `90_Iterate.js` | Iterating over arrays |
+| `91_Transform_Array.js` | Transforming arrays |
+| `92_Arrays.js` | Advanced array concepts |
+| `93_Array_Slicing.js` | Array slicing and splicing |
+| `94_Concat_array.js` | Concatenating arrays |
+| `95_Array_Checking.js` | Array checking and validation |
 
 ## Getting Started
 

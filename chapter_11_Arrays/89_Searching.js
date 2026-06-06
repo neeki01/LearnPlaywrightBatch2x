@@ -1,15 +1,25 @@
-let result = [ "pass", "fail", "pass", "error", "fail" ];
+let results = ["pass", "fail", "pass", "error", "fail"];
+
+//// indexOf — returns first index, or -1 if not found
+results.indexOf("fail"); //1
+results.indexOf("skip");        // -1
+
+// lastIndexOf — searches from the end
+results.lastIndexOf("fail");    // 4
 
 
-console.log( result.indexOf( "fail" ) );
+// includes — returns boolean
+results.includes("error"); // true
+results.includes("skip");       // false
 
-console.log( result.indexOf( "skip" ) );
-// console.log( result );
-console.log( result.lastIndexOf( "fail" ) );
-// console.log( result );
-console.log( result.includes( "error" ) );//gives true or false
-// console.log( result );
 
-// result.includes( "skip" );
-// console.log( result );
+// find — returns first matching element
+let nums = [10, 25, 30, 45];
+let r = nums.find(x => x > 20);
+console.log(r);
 
+// findIndex
+nums.findIndex(n => n > 20); // 1, 2, 3
+
+nums.findLast(n => n > 20); // 45] 
+nums.findLastIndex(n => n > 20);// 3
