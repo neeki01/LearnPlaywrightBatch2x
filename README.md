@@ -13,6 +13,10 @@ A comprehensive learning repository for SDET automation concepts using Playwrigh
 - [Chapter 9: User Input](#chapter-9-user-input)
 - [Chapter 10: Loops](#chapter-10-loops)
 - [Chapter 11: Arrays](#chapter-11-arrays)
+- [Chapter 12: Functions](#chapter-12-functions)
+- [Chapter 13: Strings](#chapter-13-strings)
+- [Chapter 14: Objects](#chapter-14-objects)
+- [Problems Solved as Tasks](#problems-solved-as-tasks)
 - [Getting Started](#getting-started)
 - [Resources](#resources)
 
@@ -145,6 +149,79 @@ JavaScript arrays: creation, manipulation, and common operations.
 | `93_Array_Slicing.js` | Array slicing and splicing |
 | `94_Concat_array.js` | Concatenating arrays |
 | `95_Array_Checking.js` | Array checking and validation |
+
+## Chapter 12: Functions
+
+JavaScript functions: declarations, expressions, arrow functions, closures, and advanced concepts.
+
+| File | Description |
+|------|-------------|
+| `96_Functions.js` | Introduction to functions |
+| `97_Type1_Fn_Basic_Functions.js` | Basic function declarations |
+| `98_Type2_Fn_With_Param_No_Return.js` | Functions with parameters, no return |
+| `99_Type3_Fn_without_Param_Return_Type.js` | Functions without parameters, with return |
+| `100_Type4_Fn_With_Param_With_Return.js` | Functions with parameters and return |
+| `101_Template_literal.js` | Template literals in functions |
+| `102_Fn_Expression.js` | Function expressions |
+| `103_Arrow_Fn.js` | Arrow function syntax |
+| `104_Arrow_Fn_REAL.js` | Real-world arrow function examples |
+| `105_IIFE.js` | Immediately Invoked Function Expressions |
+| `106_Default_Param_Fn.js` | Default parameters in functions |
+| `107_IQ.js` | Interview questions on functions |
+| `108_Rest_Param_Fn.js` | Rest parameters in functions |
+| `109_IQ.js` | Interview questions part 2 |
+| `110_Spead_IQ.js` | Spread operator interview questions |
+| `111_Scope._Fn.js` | Function scope |
+| `112_IQ.js` | Interview questions part 3 |
+| `113_Closure.js` | Closure basics |
+| `114_Closure.js` | Closure examples |
+| `115_API_REAL_Closure.js` | Real-world closure examples with APIs |
+| `116_Higher_Order_Fn.js` | Higher-order functions |
+| `117_Pure_Fn.js` | Pure functions |
+| `118_Normalize_Label.js` | Normalize label examples |
+
+## Chapter 13: Strings
+
+JavaScript strings: creation, manipulation, searching, and transformation.
+
+| File | Description |
+|------|-------------|
+| `118_Strings.js` | Introduction to strings |
+| `119_String_Properties.js` | String properties and methods |
+| `120_Search_Check_Str.js` | Searching and checking strings |
+| `121_Substring.js` | Substring operations |
+| `122_Transform_Str.js` | String transformation methods |
+| `123_SC.js` | String cheatsheet |
+| `javascript_stringcheatsheet.md` | JavaScript string cheatsheet reference |
+
+## Chapter 14: Objects
+
+JavaScript objects: creation, manipulation, destructuring, and advanced concepts.
+
+| File | Description |
+|------|-------------|
+| `124_Objects.js` | Introduction to objects |
+| `125_Objects2.js` | Object fundamentals |
+| `126_Objects_Creation.js` | Object creation methods |
+| `127_Objects_REAL.js` | Real-world object examples |
+| `128_Primitive_Ref.js` | Primitive vs reference types |
+| `129_Ob_Examples.js` | Object examples |
+| `130_IQ.js` | Interview questions on objects |
+| `131_Object_Fn.js` | Object methods and functions |
+| `132_Obj_Decon.js` | Object destructuring |
+| `133_Spead.js` | Spread operator with objects |
+| `134_Objects_GET_SET_Methods.js` | Getters and setters in objects |
+| `135_IQ` | Interview questions part 2 |
+| `136_Obj_REAL.js` | Real-world object implementations |
+| `137_Let_const_obj.js` | let and const with objects |
+
+## Problems Solved as Tasks
+
+Practice problems and solutions.
+
+| File | Description |
+|------|-------------|
+| `ProblemsOnLoops.js` | Loop practice problems |
 
 ## Getting Started
 
