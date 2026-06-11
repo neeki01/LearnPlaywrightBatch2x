@@ -222,6 +222,7 @@ Practice problems and solutions.
 | File | Description |
 |------|-------------|
 | `ProblemsOnLoops.js` | Loop practice problems |
+| `StringProblems.js` | String reverse, palindrome, and anagram problems |
 
 ## Getting Started
 
