@@ -1,0 +1,22 @@
+let matrix_2D = [
+
+];
+
+//R-1
+
+//C- 4
+//Size-1*4
+
+let grid = [
+    [ 10, 20, 30 ],
+    [ 40, 50, 60 ],
+    [ 70, 80, 90 ]
+];
+
+//n*n matrix, symetric matrix
+
+console.log( grid[ 0 ][ 0 ] );
+console.log( grid[ 0 ][ 2 ] );
+
+console.log( grid.length );//3- number of rows
+console.log( grid[ 0 ].length );//3- number of columns in 0th row

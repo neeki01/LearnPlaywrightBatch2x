@@ -16,6 +16,7 @@ A comprehensive learning repository for SDET automation concepts using Playwrigh
 - [Chapter 12: Functions](#chapter-12-functions)
 - [Chapter 13: Strings](#chapter-13-strings)
 - [Chapter 14: Objects](#chapter-14-objects)
+- [Chapter 15: 2D Arrays](#chapter-15-2d-arrays)
 - [Problems Solved as Tasks](#problems-solved-as-tasks)
 - [Getting Started](#getting-started)
 - [Resources](#resources)
@@ -215,6 +216,18 @@ JavaScript objects: creation, manipulation, destructuring, and advanced concepts
 | `136_Obj_REAL.js` | Real-world object implementations |
 | `137_Let_const_obj.js` | let and const with objects |
 
+## Chapter 15: 2D Arrays
+
+Working with two-dimensional arrays (grids/matrices) in JavaScript.
+
+| File | Description |
+|------|-------------|
+| `138_2D_Array.js` | Introduction to 2D arrays and accessing elements |
+| `139_2djs` | 2D array creation and structure |
+| `140_Real.js` | Real-world 2D array examples (test case results) |
+| `141_2D_Array_Fn.js` | 2D array operations with functions (row sums, etc.) |
+| `142_IQ_Right_Py_pattern.js` | Right pyramid star pattern interview question |
+
 ## Problems Solved as Tasks
 
 Practice problems and solutions.
@@ -223,6 +236,7 @@ Practice problems and solutions.
 |------|-------------|
 | `ProblemsOnLoops.js` | Loop practice problems |
 | `StringProblems.js` | String reverse, palindrome, and anagram problems |
+| `PatternPy.js` | Star pattern problems (reverse triangle and pyramid) |
 
 ## Getting Started
 
