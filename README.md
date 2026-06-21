@@ -72,7 +72,7 @@ graph TB
         end
 
         subgraph ts["🟦 TypeScript (Week 9)"]
-            ts1["Ch 19: TS Fundamentals"]
+            ts1["Ch 19: TS Fundamentals ✅"]
             ts2["Ch 20: Interfaces"]
             ts3["Ch 21: Enums"]
             ts4["Ch 22: Generics"]
@@ -80,7 +80,7 @@ graph TB
         end
 
         subgraph pw["🎭 Playwright (Weeks 10–12)"]
-            pw1["Ch 24: PW Fundamentals"]
+            pw1["Ch 24: PW Fundamentals ✅"]
             cli["Lecture: Playwright CLI"]
             ai["Lecture: AI Agents"]
             mcp["Lecture: MCP Protocol"]
@@ -315,6 +315,24 @@ LearnPlaywrightBatch2x/
 │   ├── 165_AA_Parallel.js              # Parallel — await Promise.allSettled([...]) (~fast)
 │   ├── 166_IQ.js                       # IQ — await order, async returns a promise
 │   └── 167_ACLogin.js                  # Real PW test — test.step, loginAs, toBeHidden
+│
+├── chapter_19_Playwright_Basics/       ✅ Playwright setup, config, first tests
+│   ├── .github/                        # CI workflow
+│   ├── tests/
+│   │   ├── example.spec.ts             # First Playwright test
+│   │   └── codegen_tta-cart_spec.ts    # Codegen-generated test
+│   ├── playwright.config.ts            # Playwright configuration
+│   └── package.json                    # Dependencies
+│
+├── chapter_20_TypeScriptBasics/        ✅ ES Modules — export / import
+│   ├── utils.js                        # Named exports (BASE_URL, formatTestName)
+│   ├── testutils.js                    # Named exports (BASE_URL, formatUpperCaseString)
+│   ├── logger.js                       # Default + named export (log, log2)
+│   └── Export_Import/
+│       ├── 168_Export_Import.js        # Named import from testutils
+│       ├── 169_Utils.js                # Renamed imports (as) from two modules
+│       ├── 170_Logger.js               # Default import from logger
+│       └── ExplainDefault.md           # export vs export default reference
 │
 └── README.md                           👋 You are here
 ```
@@ -4064,14 +4082,119 @@ let [a, b, c] = await Promise.allSettled([
 
 ---
 
+## 📖 What's in Chapter 19 — Playwright Basics (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `playwright.config.ts` | Configuration | Test directory, parallel mode, retries, projects (Chromium/Firefox/WebKit) |
+| `tests/example.spec.ts` | First test | `test()`, `page.goto()`, `expect(page).toHaveTitle()` |
+| `tests/codegen_tta-cart_spec.ts` | Codegen output | Recorded test from Playwright codegen — selectors, actions |
+| `.github/workflows/` | CI | GitHub Actions workflow for running Playwright tests |
+| `package.json` | Dependencies | `@playwright/test`, `playwright`, `@types/node` |
+
+### Key Concepts
+
+```mermaid
+mindmap
+  root((Chapter 19 — Playwright Basics))
+    Setup
+      npm init playwright
+      playwright.config.ts
+      projects (browsers)
+    First Test
+      test('title', async ({ page }) => {})
+      page.goto(url)
+      expect(page).toHaveTitle()
+    Codegen
+      npx playwright codegen url
+      recorded selectors
+      replayable test
+    CI
+      GitHub Actions
+      matrix browsers
+      HTML report
+```
+
+### Run them
+
+```bash
+cd chapter_19_Playwright_Basics
+npx playwright test                      # Run all tests
+npx playwright test --ui                 # Interactive UI mode
+npx playwright codegen <url>             # Record a new test
+npx playwright show-report               # Open HTML report
+```
+
+---
+
+## 📖 What's in Chapter 20 — TypeScript Basics: ES Modules (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `utils.js` | Named exports | `export let BASE_URL`, `export function formatTestName()` |
+| `testutils.js` | Named exports | `export let BASE_URL`, `export function formatUpperCaseString()` |
+| `logger.js` | Default + named | `export default function log()`, `export function log2()` |
+| `Export_Import/168_Export_Import.js` | Named import | `import { BASE_URL, formatUpperCaseString } from "../testutils.js"` |
+| `Export_Import/169_Utils.js` | Renamed imports | `import { BASE_URL as bul_util }` — resolve name clashes with `as` |
+| `Export_Import/170_Logger.js` | Default import | `import log from '../logger.js'` — no braces, any name |
+| `Export_Import/ExplainDefault.md` | Reference | Full `export` vs `export default` comparison |
+
+### Key Concepts
+
+```mermaid
+mindmap
+  root((Chapter 20 — ES Modules))
+    Named export
+      export let / function
+      import { x } from
+      name must match
+      rename with as
+    Default export
+      export default function
+      import x from
+      no braces
+      any name on import
+      only one per file
+    Mixing both
+      default first (no braces)
+      named after (in braces)
+    Name clash
+      import { X as Y } from
+      alias resolves conflict
+```
+
+### Run them
+
+```bash
+node chapter_20_TypeScriptBasics/Export_Import/168_Export_Import.js   # → named import
+node chapter_20_TypeScriptBasics/Export_Import/169_Utils.js           # → renamed imports (as)
+node chapter_20_TypeScriptBasics/Export_Import/170_Logger.js          # → default import
+```
+
+| Feature | Named export | Default export |
+|---------|:---:|:---:|
+| Keyword | `export` | `export default` |
+| Per file | many | only **one** |
+| Import syntax | `import { x } from` | `import x from` |
+| Braces | yes `{ }` | no |
+| Import name | must match (or `as`) | any name |
+
+---
+
 ## 🔭 What's Coming Next
 
 ```mermaid
 graph TD
-    subgraph next["Next Up — Playwright Basics"]
-        N1[Ch 17: Promises ✅] --> N2[Ch 18: Async / Await ✅]
-        N2 --> N3[Ch 19: Playwright Basics]
-        N3 --> N4[Ch 20: Locators & POM]
+    subgraph next["Next Up — TypeScript & Playwright"]
+        N1[Ch 18: Async / Await ✅] --> N2[Ch 19: Playwright Basics ✅]
+        N2 --> N3[Ch 20: TypeScript Modules ✅]
+        N3 --> N4[Ch 21: TS Interfaces & Enums]
+        N4 --> N5[Ch 22: Generics & Access Modifiers]
+        N5 --> N6[Ch 23: Locators & POM]
     end
 
     style next fill:#fff3e0,stroke:#e65100
@@ -4096,6 +4219,8 @@ graph TD
 - ✅ Chapter 16 — **Callbacks**: pass-a-function (named/anon/arrow), the `test()` callback shape, sync vs async (`forEach` vs `setTimeout`), event-loop ordering, callback hell / 24-step pyramid of doom, callbacks with parameters & return-driving (files `143`–`153`)
 - ✅ Chapter 17 — **Promises**: `new Promise` (resolve/reject), `.then`/`.catch`/`.finally`, chaining to flatten callback hell, `Promise.all` vs `allSettled`, IQ traps (`throw` in `.then`, settle order) (files `154`–`160`)
 - ✅ Chapter 18 — **Async / Await**: `async`/`await` as sugar over promises, `try/catch/finally` error handling, flat E2E awaits vs `.then()` chains, sequential vs parallel (`Promise.allSettled`), first real Playwright tests (files `161`–`167`)
+- ✅ Chapter 19 — **Playwright Basics**: Playwright project setup, `playwright.config.ts`, first test (`example.spec.ts`), codegen-generated test, CI workflow with GitHub Actions
+- ✅ Chapter 20 — **TypeScript Basics (ES Modules)**: `export` / `import` named exports, `export default`, renaming with `as`, mixing default + named imports (files `168`–`170`)
 - ✅ **Per-chapter README** — every chapter folder now has its own deep-dive README.md
 
 ---
