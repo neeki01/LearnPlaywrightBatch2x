@@ -117,3 +117,47 @@ function executeWithRetry() {
         console.log( `Final Result: API call failed. All ${ maxRetries } attempts exhausted.` );
     }
 }
+executeWithRetry();
+
+//challenge 4
+
+function evaluateElementState(isPresent, isDisplayed, isEnabled) {
+  // Determine the State using strict equality and logical operators
+  const state = (isPresent === false) ? 'NOT FOUND' :
+                (isDisplayed === false) ? 'HIDDEN' :
+                (isEnabled === false) ? 'DISABLED' : 'READY';
+
+  // Determine the Severity using the ternary operator
+  const severity = (state === 'NOT FOUND') ? 'CRITICAL' :
+                   (state === 'HIDDEN' || state === 'DISABLED') ? 'WARNING' : 'OK';
+
+  // Determine Action based on State
+  let action = '';
+  switch (state) {
+    case 'READY':
+      action = 'Perform intended action (click, type, etc.).';
+      break;
+    case 'DISABLED':
+      action = 'Log bug: Element should be interactive but is greyed out. Check dependencies or preconditions.';
+      break;
+    case 'HIDDEN':
+      action = 'Log bug: Element is in the DOM but not visible. Verify UI rendering logic.';
+      break;
+    case 'NOT FOUND':
+      action = 'Log bug: Element is completely missing from the DOM. Check network requests or locator strategy.';
+      break;
+    default:
+      action = 'Unknown state.';
+  }
+
+  console.log(`State: ${state}`);
+  console.log(`Severity: ${severity}`);
+  console.log(`Action: ${action}`);
+  console.log('--------------------------------------------------');
+}
+
+// === Example Usages ===
+evaluateElementState(true, true, true);    // READY state
+evaluateElementState(true, true, false);   // DISABLED state
+evaluateElementState(true, false, false);  // HIDDEN state
+evaluateElementState(false, false, false); // NOT FOUND state
