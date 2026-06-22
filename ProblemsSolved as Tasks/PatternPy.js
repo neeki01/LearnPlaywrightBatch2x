@@ -65,4 +65,5 @@ Each row gets fewer spaces and more stars, making the pyramid shape!
 */
 
 
-
+for ( let i = 0; i < 5; i++ ) { if ( i === 3 ) break; }
+console.log( i )
