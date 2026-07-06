@@ -395,12 +395,18 @@ LearnPlaywrightBatch2x/
 │   ├── 216_Generic_Class.ts            # Generic class TestDataStorage<T>
 │   └── 217_Generic_API_RESPONSE.ts     # Generic API response wrapper
 │
+├── chapter_30_PRIVATE_PUBLIC_PROTECTED/ ✅ Access modifiers — public, private, protected, readonly, abstract
+│   ├── 218_PPP.ts                      # Public/private/protected APIClient
+│   ├── 219_PageObjectModel.ts          # Protected in POM pattern
+│   ├── 220_READONLY.ts                 # Readonly PlaywrightConfig
+│   └── 221_Abstract_Class.ts           # Abstract BaseTest class
+│
 └── README.md                           👋 You are here
 ```
 
 > Each chapter has its **own README.md** with full code walk-throughs and expected output. Jump straight in:
 >
-> [Ch 1](./chapter_01_Basics/README.md) · [Ch 2](./chapter_02_Javascript_Concepts/README.md) · [Ch 3](./chapter_03_Identifier_Literals/README.md) · [Ch 4](./chapter_04_Javascript_Concepts/README.md) · [Ch 5](./chapter_05_Literal/README.md) · [Ch 6](./chapter_06_Operator/README.md) · [Ch 7](./chapter_07_If_else/README.md) · [Ch 8](./chapter_08_Switch_Statement/README.md) · [Ch 9](./chapter_09_UserInput/README.md) · [Ch 10](./chapter_10_Loops/README.md) · [Ch 11](./chapter_11_Arrays/README.md) · [Ch 12](./chapter_12_Funtions/README.md) · [Ch 13](./chapter_13_Strings/README.md) · [Ch 14](./chapter_14_Objects/README.md) · [Ch 15](./chapter_15_2D_Array/README.md) · [Ch 16](./chapter_16_Callbacks/README.md) · [Ch 17](./chapter_17_Promise/README.md) · [Ch 18](./chapter_18_Async_Await/README.md) · [Ch 19](./chapter_19_Playwright_Basics/README.md) · [Ch 20](./chapter_20_OOPs_Basics/README.md) · [Ch 21](./chapter_21_Classes_Objects/README.md) · [Ch 22](./chapter_22_Encapsulation/README.md) · [Ch 23](./chapter_23_Inheritance/README.md) · [Ch 24](./chapter_24_Polymorphism/README.md) · [Ch 25](./chapter_25_OOP_Interview_Questions/README.md) · [Ch 26](./chapter_26_TypeScript/README.md) · [Ch 27](./chapter_27_TypeScript_Interface/README.md) · [Ch 28](./chapter_28_ENUM/README.md) · [Ch 29](./chapter_29_Typescript_Generic/README.md)
+> [Ch 1](./chapter_01_Basics/README.md) · [Ch 2](./chapter_02_Javascript_Concepts/README.md) · [Ch 3](./chapter_03_Identifier_Literals/README.md) · [Ch 4](./chapter_04_Javascript_Concepts/README.md) · [Ch 5](./chapter_05_Literal/README.md) · [Ch 6](./chapter_06_Operator/README.md) · [Ch 7](./chapter_07_If_else/README.md) · [Ch 8](./chapter_08_Switch_Statement/README.md) · [Ch 9](./chapter_09_UserInput/README.md) · [Ch 10](./chapter_10_Loops/README.md) · [Ch 11](./chapter_11_Arrays/README.md) · [Ch 12](./chapter_12_Funtions/README.md) · [Ch 13](./chapter_13_Strings/README.md) · [Ch 14](./chapter_14_Objects/README.md) · [Ch 15](./chapter_15_2D_Array/README.md) · [Ch 16](./chapter_16_Callbacks/README.md) · [Ch 17](./chapter_17_Promise/README.md) · [Ch 18](./chapter_18_Async_Await/README.md) · [Ch 19](./chapter_19_Playwright_Basics/README.md) · [Ch 20](./chapter_20_OOPs_Basics/README.md) · [Ch 21](./chapter_21_Classes_Objects/README.md) · [Ch 22](./chapter_22_Encapsulation/README.md) · [Ch 23](./chapter_23_Inheritance/README.md) · [Ch 24](./chapter_24_Polymorphism/README.md) · [Ch 25](./chapter_25_OOP_Interview_Questions/README.md) · [Ch 26](./chapter_26_TypeScript/README.md) · [Ch 27](./chapter_27_TypeScript_Interface/README.md) · [Ch 28](./chapter_28_ENUM/README.md) · [Ch 29](./chapter_29_Typescript_Generic/README.md) · [Ch 30](./chapter_30_PRIVATE_PUBLIC_PROTECTED/README.md)
 
 > **Legend:** ✅ Done · 🚧 Coming soon
 
