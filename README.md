@@ -324,22 +324,83 @@ LearnPlaywrightBatch2x/
 │   ├── playwright.config.ts            # Playwright configuration
 │   └── package.json                    # Dependencies
 │
-├── chapter_20_TypeScriptBasics/        ✅ ES Modules — export / import
-│   ├── utils.js                        # Named exports (BASE_URL, formatTestName)
-│   ├── testutils.js                    # Named exports (BASE_URL, formatUpperCaseString)
-│   ├── logger.js                       # Default + named export (log, log2)
-│   └── Export_Import/
-│       ├── 168_Export_Import.js        # Named import from testutils
-│       ├── 169_Utils.js                # Renamed imports (as) from two modules
-│       ├── 170_Logger.js               # Default import from logger
-│       └── ExplainDefault.md           # export vs export default reference
+├── chapter_20_OOPs_Basics/            ✅ OOP concepts — classes, objects, methods
+│   ├── 186_Class.js                    # Class definition (browser example)
+│   ├── 187_Object.js                   # Creating objects
+│   ├── 188_Reference.js                # Copy by reference
+│   ├── 189_Object_clone.js             # Cloning objects
+│   ├── 190_Constructors.js             # Constructor functions
+│   └── 191_OBJECT_CLASS.js            # Class vs object comparison
+│
+├── chapter_21_Classes_Objects/        ✅ Classes — blueprint, constructor, private, static
+│   ├── 171_Class_Object.js             # Basic class definition
+│   ├── 172_Class_Object2.js            # More class examples
+│   ├── 173_Car.js                      # Car class with constructor
+│   ├── 174_REAL_Browser.js             # Real TestCase class
+│   ├── 175_IQ.js                       # Interview questions
+│   ├── 176_Private_Public.js           # Private (#) and public fields
+│   ├── 177_Statis.js                   # Static members
+│   └── 178_Statis.js                   # More static examples
+│
+├── chapter_22_Encapsulation/          ✅ Encapsulation — private fields, getters, setters
+│   ├── 179_Encapsulation.js            # Private fields with #
+│   └── 180_GET_SET.js                  # Getters and setters
+│
+├── chapter_23_Inheritance/            ✅ Inheritance — extends, super, method overriding
+│   ├── 181_Inheritance.js              # extends keyword (Parent → Child)
+│   ├── 182_Inheritance_Types.js        # Types of inheritance
+│   └── 183_Super_Fn.js                 # super() constructor
+│
+├── chapter_24_Polymorphism/           ✅ Polymorphism — method overriding, many forms
+│   ├── 184_Polymorphism_1.js           # Method overriding in child classes
+│   └── 185_Polymorphism_2.js           # More polymorphism examples
+│
+├── chapter_25_OOP_Interview_Questions/ ✅ OOP interview prep
+│   ├── EX1.js                          # Bug tracker class
+│   ├── EX2.js                          # Default parameter constructors
+│   ├── EX3.js                          # `this` keyword
+│   └── EX4.js                          # Method chaining with return this
+│
+├── chapter_26_TypeScript/             ✅ TypeScript basics — types, annotations
+│   ├── 193_TS.js                       # TypeScript intro
+│   ├── 194_TS_HelloWorld.js            # First TS program
+│   ├── 194_TS_HelloWorld.ts            # TS version
+│   ├── 195_TS_Part1.ts                 # Variables & type annotations
+│   ├── 196_TS_Part2.ts                 # Arrays & objects
+│   ├── 197_TS_Part2.ts                 # More type annotations
+│   ├── 198_TS_Part3.ts                 # Union & function types
+│   ├── 199_IQ.ts                       # Interview questions
+│   └── 200_IQ.ts                       # Advanced IQ
+│
+├── chapter_27_TypeScript_Interface/   ✅ Interfaces — shape, optional, readonly, extends, implements
+│   ├── 201_Interface.ts                # Basic TestCase interface
+│   ├── 202_Interface_Part2.ts          # Optional properties (?)
+│   ├── 203_IF_READONLY.ts              # Readonly properties
+│   ├── 204_IF_READOnly.ts              # Point + ReadonlyArray
+│   ├── 205_Interface.ts                # Calculator interface
+│   ├── 206_Hooks.ts                    # Function-type interface
+│   ├── 207_Bug REPORT.ts              # BugReport interface
+│   ├── 208_TestConfig.ts              # TestConfig interface
+│   ├── 209_REAL_EXAMPLE.ts            # Interface inheritance (extends)
+│   └── 210_Class_Interface.ts          # Class implements interface
+│
+├── chapter_28_ENUM/                   ✅ Enums — named constants, string enums, switch
+│   ├── 211_ENUM.ts                     # TestStatus enum
+│   ├── 212_Enum_Fn.ts                  # Severity + Environment enums
+│   ├── 213_ENUM.ts                     # Browser enum with switch-case
+│   └── 214_API_.ts                     # HTTPMethod enum
+│
+├── chapter_29_Typescript_Generic/     ✅ Generics — type parameters, generic class, API wrapper
+│   ├── 215_Generic.ts                  # Generic function getFirstResult<T>
+│   ├── 216_Generic_Class.ts            # Generic class TestDataStorage<T>
+│   └── 217_Generic_API_RESPONSE.ts     # Generic API response wrapper
 │
 └── README.md                           👋 You are here
 ```
 
 > Each chapter has its **own README.md** with full code walk-throughs and expected output. Jump straight in:
 >
-> [Ch 1](./chapter_01_Basics/README.md) · [Ch 2](./chapter_02_Javascript_Concepts/README.md) · [Ch 3](./chapter_03_Identifier_Literals/README.md) · [Ch 4](./chapter_04_Javascript_Concepts/README.md) · [Ch 5](./chapter_05_Literal/README.md) · [Ch 6](./chapter_06_Operator/README.md) · [Ch 7](./chapter_07_If_else/README.md) · [Ch 8](./chapter_08_Switch_Statement/README.md) · [Ch 9](./chapter_09_UserInput/README.md) · [Ch 10](./chapter_10_Loops/README.md) · [Ch 11](./chapter_11_Arrays/README.md)
+> [Ch 1](./chapter_01_Basics/README.md) · [Ch 2](./chapter_02_Javascript_Concepts/README.md) · [Ch 3](./chapter_03_Identifier_Literals/README.md) · [Ch 4](./chapter_04_Javascript_Concepts/README.md) · [Ch 5](./chapter_05_Literal/README.md) · [Ch 6](./chapter_06_Operator/README.md) · [Ch 7](./chapter_07_If_else/README.md) · [Ch 8](./chapter_08_Switch_Statement/README.md) · [Ch 9](./chapter_09_UserInput/README.md) · [Ch 10](./chapter_10_Loops/README.md) · [Ch 11](./chapter_11_Arrays/README.md) · [Ch 12](./chapter_12_Funtions/README.md) · [Ch 13](./chapter_13_Strings/README.md) · [Ch 14](./chapter_14_Objects/README.md) · [Ch 15](./chapter_15_2D_Array/README.md) · [Ch 16](./chapter_16_Callbacks/README.md) · [Ch 17](./chapter_17_Promise/README.md) · [Ch 18](./chapter_18_Async_Await/README.md) · [Ch 19](./chapter_19_Playwright_Basics/README.md) · [Ch 20](./chapter_20_OOPs_Basics/README.md) · [Ch 21](./chapter_21_Classes_Objects/README.md) · [Ch 22](./chapter_22_Encapsulation/README.md) · [Ch 23](./chapter_23_Inheritance/README.md) · [Ch 24](./chapter_24_Polymorphism/README.md) · [Ch 25](./chapter_25_OOP_Interview_Questions/README.md) · [Ch 26](./chapter_26_TypeScript/README.md) · [Ch 27](./chapter_27_TypeScript_Interface/README.md) · [Ch 28](./chapter_28_ENUM/README.md) · [Ch 29](./chapter_29_Typescript_Generic/README.md)
 
 > **Legend:** ✅ Done · 🚧 Coming soon
 
