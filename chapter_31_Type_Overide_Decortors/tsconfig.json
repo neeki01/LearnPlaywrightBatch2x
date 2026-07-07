@@ -1,0 +1,13 @@
+{
+  // Decorators must be DOWN-LEVELLED to run on Node.
+  // target: esnext leaves @decorators raw (native, unsupported) → they never fire.
+  // target: es2022 makes TS emit the __esDecorate helper that actually applies them.
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "skipLibCheck": true,
+    "types": []
+  }
+}
