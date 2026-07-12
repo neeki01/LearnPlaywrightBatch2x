@@ -1,0 +1,90 @@
+/*Normalize Js Basics Label
+Derived from JavaScript chapters 1 to 3: JavaScript basics, engine setup, comments, identifiers, literals, null, undefined, and equality.
+
+Create a reusable label normalizer for JavaScript QA utilities.
+
+Rules:
+- Trim leading and trailing spaces.
+- Convert text to lowercase.
+- Replace non-alphanumeric groups with a single hyphen.
+- Prefix the result with "js-basic-".
+*/
+
+function normalizeJsBasicsLabel(label) {
+
+  
+
+  let stringValue = "js-basic-" + label.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
+  
+  
+
+  return stringValue.replace(/^-+|-+$/g,"");
+  // write your code here
+}
+
+normalizeJsBasicsLabel(" Login Button ");
+normalizeJsBasicsLabel("User Profile: Edit!")
+normalizeJsBasicsLabel("---Search@@Box---")
+normalizeJsBasicsLabel(" ")
+
+
+/*Validate Js Basics Identifier
+Derived from JavaScript chapters 1 to 3: JavaScript basics, engine setup, comments, identifiers, literals, null, undefined, and equality.
+
+Write a validator for names used in helper functions, variables, or test data keys.
+
+Rules:
+- Value must be a non-empty string after trimming.
+- It must start with a letter, underscore, or dollar sign.
+- Remaining characters may include letters, digits, underscore, or dollar sign.
+- Reject reserved words used in this chapter: let, const, var, class, function, return.
+*/
+
+function isValidJsBasicsIdentifier(name) {
+
+  if (typeof name !== "string") {
+    return false;
+  }
+
+  const trimmed = name.trim();
+
+  if (trimmed.length === 0) {
+    return false;
+  }
+  if (trimmed === "let" || trimmed === "const" || trimmed === "var" || trimmed === "class" || trimmed === "function" || trimmed === "return")
+  {
+    return false;
+  }
+
+  return /^[A-Za-z_$][A-Za-z0-9_$]*$/.test(trimmed);
+}
+
+isValidJsBasicsIdentifier("loginButton");
+isValidJsBasicsIdentifier("$submit");
+isValidJsBasicsIdentifier("1login");
+isValidJsBasicsIdentifier("let");
+
+/*
+Create a QA-friendly score classifier for practice readiness.
+
+Rules:
+- 90 and above => EXCELLENT.
+- 75 to 89 => GOOD.
+- 50 to 74 => NEEDS_PRACTICE.
+- Below 50 => REVISIT.
+*/
+function classifyJsBasicsScore(score) {
+
+  if (score >= 90) {
+    return "EXCELLENT";
+  } else if (score >= 75) {
+    return "GOOD";
+  } else if (score >= 50) {
+    return "NEEDS_PRACTICE";
+  } else {
+    return "REVISIT";
+  }
+}
+
+classifyJsBasicsScore(52);
